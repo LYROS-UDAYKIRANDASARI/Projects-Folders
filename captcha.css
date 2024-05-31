@@ -1,0 +1,40 @@
+.error {
+    color: red;
+  }
+
+  .img1 {
+    content: url(car1.jpeg);
+    }
+    .img2 {
+    content: url(bike1.jpeg);
+    }
+    .img3 {
+    content: url(bike2.jpeg);
+  }
+  .img4 {
+  content: url(bike3.jpeg);
+  }
+  .img5 {
+  content: url(bike4.jpeg);
+  }
+  .img6 {
+    content: url(car1.jpeg);
+  }
+  img {
+  margin: 10px;
+  border: 5px solid #555;
+  width: 10%;
+  }
+  .flex {
+  display: flex;
+  justify-content: center;
+  }
+  .selected {
+  border: 5px solid rgb(0, 195, 255);
+  }
+  p {
+  text-align: center;
+  }
+  button {
+  margin: 20px;
+  }

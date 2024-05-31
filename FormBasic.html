@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basic</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+    <form>
+        <input type="text" name="name" placeholder="Enter your name" id="name">
+
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+
+        <input type="password" name="confirm-password" placeholder="confirm your password" id="confirm-password">
+
+        <button type="submit">Submit</button>
+    </form>
+    </fieldset>
+
+    <div class="output"></div>
+
+    <script>
+        let name_box = document.querySelector("#name");
+        let email_box = document.querySelector("#email");
+        let password_box = document.querySelector("#password");
+        let confirm_password_box = document.querySelector("#confirm-password");
+        let btn = document.querySelector("button");
+        let output = document.querySelector(".output");
+
+        btn.addEventListener("click",validateForm)
+
+        function validateForm() {
+            
+        }
+    </script>
+</body>
+</html>

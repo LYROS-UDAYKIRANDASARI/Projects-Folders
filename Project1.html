@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Project1.css">
+</head>
+<body>
+    <div id="container">
+    <div id="img"><img src=""></div>
+    <center>
+    <div id="cont1">
+        <form>
+            <h1>Email SignUp</h1>
+            <hr>
+            <label for="mail"><b>Email : </b></label>
+            <input type="email" id="m1" placeholder="enter mail" required><br>
+            <br>
+             <label for="pass"><b>Password :</b></label>
+            <input type="password" id="p1" placeholder="enter password" required><br>
+            <br>
+            <button onclick="signup()"><b>SignUp</b></button>
+        </form>
+    </div>
+    </center>
+    </div>
+    <script>
+         let mail;
+         let pass;    
+         let signup = () => {
+            mail = m1.value;
+            pass = p1.value;
+            // if (x.value==0 && y.value==0){
+            //     alert("please enter your credintials")
+            // }
+            cont1.innerHTML = `<div id="cont2">
+                <h1>Email Login</h1>
+            <hr>
+            <label for="mail"><b>Email : </b></label>
+            <input type="email" id="x" placeholder="enter mail" required><br>
+            <br>
+             <label for="pass"><b>Password :</b></label>
+            <input type="password" id="y" placeholder="enter password" required><br>
+            <br>
+            <button onclick="signin()"><b>SignIn</b></button><br>
+            <br>
+            <p >Not Registered Yet ?<a href="#">Create an account</a></p>
+                <p id="confirm"></p>
+                </div>`
+         }
+         let signin = () => {
+            if(mail==x.value && pass==y.value) {
+                alert("Success");
+                
+            } else {
+                alert("Failed");
+            }
+         }
+    </script>
+</body>
+</html>
